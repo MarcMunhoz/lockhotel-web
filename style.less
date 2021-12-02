@@ -76,3 +76,45 @@ a {
 button {
   cursor: pointer;
 }
+
+.search {
+  align-items: center;
+  background-color: white;
+  border-radius: 0.3125rem;
+  height: 3.75rem;
+  margin-bottom: 1.875rem;
+  width: 37.5rem;
+  .d-flex(~"row nowrap", ~"space-between");
+
+  .search-content {
+    margin-left: 0.9375rem;
+    width: 80%;
+    .d-flex(~"row wrap", ~"space-between");
+
+    .text-search {
+      color: #013f6b;
+      font-family: "PT Sans", sans-serif;
+      font-size: 0.75rem;
+      font-weight: 600;
+      margin: 0;
+    }
+  }
+
+  .calendar {
+    cursor: pointer;
+    border-style: none;
+    width: 7.25rem;
+
+    &::-webkit-calendar-picker-indicator {
+      cursor: inherit;
+    }
+  }
+}
+
+.main-wt {
+  align-items: center;
+  background-color: white;
+  padding-top: 9.375rem;
+  padding-bottom: 6.25rem;
+  .d-flex(~"row wrap", ~"center");
+}
